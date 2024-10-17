@@ -1,5 +1,5 @@
 // seleziono l'elemento dalla DOM
-const listEl = document.querySelector(".result > ol");
+const listEl = document.querySelector(".container > ol");
 // console.log(listEl);
 
 for (let i = 0; i < 10; i++) {
@@ -16,9 +16,10 @@ for (let i = 0; i < 10; i++) {
 
         // salvo la mail 
         const resultEmail = result.response;
-        console.log(resultEmail);
+        // console.log(resultEmail);
 
         const listItemEl = document.createElement("li");
+        listItemEl.classList.add("list-group-item")
         listItemEl.innerText = resultEmail
 
         listEl.appendChild(listItemEl);
