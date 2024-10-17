@@ -8,6 +8,8 @@ const buttonEl = document.querySelector(".navbar .btn");
 
 // event listener
 buttonEl.addEventListener("click", () => {
+    
+    // all'inizio deve essere vuoto
     listEl.innerHTML = "";
 
     for (let i = 0; i < 10; i++) {
